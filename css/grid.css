@@ -1,0 +1,150 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ html,
+body {
+  height: 100%;
+}
+
+.faq-text {
+  font-size: 1.25rem;
+   font-family: 'Jost', sans-serif;
+}
+
+ .mlt {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
+  overflow: hidden;
+}
+
+.bc {
+  padding: 25px 0;
+  overflow: hidden;
+/*  display: grid; */
+  grid-auto-flow: row;
+  grid-template-columns: 350px;
+}
+
+
+.bc img{
+  height: 250px;
+  width: 400px;
+  object-fit: cover;
+}
+
+ .cc {
+  background-color: #eff0f3;
+  overflow: hidden;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 400px;
+}
+
+.back-color{
+  background-color: #eff0f3;
+}
+@media (max-width: 575.98px) {
+  .cc {
+    grid-template-columns: 15px repeat(1fr, 10) 15px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .cc {
+    grid-template-columns: 1fr repeat(10, 54px) 1fr;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .cc {
+    grid-template-columns: 1fr repeat(10, 72px) 1fr;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .cc {
+    grid-template-columns: 1fr repeat(10, 96px) 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .cc {
+    grid-template-columns: 1fr repeat(10, 114px) 1fr;
+  }
+}
+ .cc img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.form-text{
+  color: #2c3e50;
+}
+.padding-main{
+  
+  height: 30px;
+}
+
+.padding-spacing-between {
+  padding: 40px;
+}
+ .ic--7-13 {
+  grid-column: 7/-1;
+}
+.ic--13-7 {
+ grid-column: -7/1;
+}
+ .ic--1-6 {
+  grid-column: 6/1;
+}
+.ic--6-1 {
+ grid-column: 6/1;
+}
+ .tc {
+  align-self: center;
+}
+ .tc--2-6 {
+  grid-column: 2/6;
+
+}
+.tc--6-2 {
+ grid-column: -6/-2;
+
+}
+ .tc--7-12 {
+  grid-column: 7/12;
+}
+.tc--12-7 {
+ grid-column: 12/7;
+}
+@media (min-width: 576px) {
+  .tc {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+.jumbotron {
+	color: #2c3e50;
+	background: #EA1515;
+}
+
+.navbar-inverse {
+	background-color: #EA1515;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}

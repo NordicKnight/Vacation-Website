@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Taniti Island</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!-- This is the responsive navigation bar. Once it gets below a certain width,
+the menu will condense and create a button and the links will toggle beneath the 
+  nav row.  -->
+  <nav
+    class="navbar navbar-expand-lg navbar-light text-uppercase fixed-top"
+    id="mainNav"
+  >
+    <div class="container">
+      <a class="navbar-brand mx-0 mx-auto" href="./index.html">TANITI ISLAND</a>
+      <button
+        class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a
+              class="nav-link py-3 px-0 px-lg-3 rounded"
+              href="pages/about.html"
+              >About</a
+            >
+          </li>
+          <li class="nav-item mx-0 mx-lg-1m,">
+            <a
+              class="nav-link py-3 px-0 px-lg-3 rounded"
+              href="pages/entertainment.html"
+              >Entertainment</a
+            >
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a
+              class="nav-link py-3 px-0 px-lg-3 rounded"
+              href="pages/dining.html"
+              >Dining</a
+            >
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a
+              class="nav-link py-3 px-0 px-lg-3 rounded"
+              href="pages/lodging.html"
+              >Lodging</a
+            >
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a
+              class="nav-link py-3 px-0 px-lg-3 rounded"
+              href="pages/transportation.html"
+              >Transportation</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- This is the hero image at the top (underneath the nav bar) with an overlay and text -->
+  <div class="big-image">
+    <div class="overlay">
+      <h1 class="h1-hero text-uppercase text-wrap">Island of Taniti</h1>
+      <div class="bg-btn">
+        <button
+          type="button"
+          class="bg-btn btn btn-outline-light"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          data-bs-whatever="@form"
+        >
+          Book A Vacation Now!
+        </button>
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog form-text">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title form-text" id="exampleModalLabel">
+                  New message
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label"
+                      >Name:</label
+                    >
+                    <input type="text" class="form-control" id="name" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label"
+                      >Email:</label
+                    >
+                    <input type="text" class="form-control" id="email" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label"
+                      >Message:</label
+                    >
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-dark"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-outline-dark">
+                  Send message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Adding padding to add space to make design look more uniform -->
+  <div class="padding-main"></div>
+  <div class="padding-spacing-between"></div>
+
+  <div class="cc">
+    <div class="tc tc--2-6">
+      <h1 class="text-uppercase">Welcome!</h1>
+      <p class="mb-0 mlt text-wrap">
+        We are happy you're vacationing here on Taniti,We look forward to catering to your
+        needs for whatever the occasion is, such as weddings, family vacations,
+        and even honeymoons! Please look around our website for
+        more information regarding local activities, lodging, food, and
+        more!
+      </p>
+      <a href="pages/about.html" class="btn btn-outline-dark"
+        >Read more about our island</a
+      >
+    </div>
+    <div class="ic ic--7-13">
+      <img src="./images2/Home 2.jpg" alt="image of a dock in the ocean" />
+    </div>
+  </div>
+
+  <!-- Adding padding to add space to make design look more uniform -->
+  <div class="padding-spacing-between"></div>
+
+  <!-- This is the second section of content and displays an image. This is responsive. When screen
+size is reduced - the content will move up and the image move below the content -->
+  <div class="cc my-4">
+    <div class="tc tc--6-2">
+      <h1 class="text-uppercase">Things to do</h1>
+      <p class="mb-0 mlt text-wrap">
+        Our island offers Countless activities for every individual and every
+        event! We offer water activities like scubbadiving and exploration like
+        hiking through the rainforests.
+      </p>
+      <a href="pages/entertainment.html" class="btn btn-outline-dark"
+        >More things to do</a
+      >
+    </div>
+    <div class="ic ic--13-7">
+      <img src="./images2/Home 3.jpg" alt="image" />
+    </div>
+  </div>
+
+  <!-- Adding padding to add space to make design look more uniform -->
+  <div class="padding-main"></div>
+  <div class="padding-main"></div>
+
+  <!-- This is the third section of content and displays an image. This is responsive. When screen
+size is reduced - the content will move up and the image move below the content -->
+  <div class="cc my-4">
+    <div class="tc tc--2-6">
+      <h1 class="text-uppercase">Dining</h1>
+      <p class="mb-0 mlt text-wrap">
+        The island offers countless dining experiences, groceries stores for
+        every person.
+      </p>
+      <a href="pages/dining.html" class="btn btn-outline-dark">Eat some more</a>
+    </div>
+    <div class="ic ic--7-13">
+      <img src="./images2/Home 4.jpg" alt="image" />
+    </div>
+  </div>
+
+  <!-- Adding padding to add space to make design look more uniform -->
+  <div class="padding-main"></div>
+  <div class="padding-main"></div>
+
+  <!-- This is the fourth section of content and displays an image. This is responsive. When screen
+size is reduced - the content will move up and the image move below the content -->
+  <div class="cc my-4">
+    <div class="tc tc--6-2">
+      <h1 class="text-uppercase">Lodging</h1>
+      <p class="mb-0 mlt text-wrap">
+        Our numerous hotels and lodges will allow you to relax in a style of your own.
+      </p>
+      <a href="pages/lodging.html" class="btn btn-outline-dark"
+        >Sleep your way</a
+      >
+    </div>
+    <div class="ic ic--13-7">
+      <img src="./images2/Home 5.jpg" alt="image" />
+    </div>
+  </div>
+
+  <!-- Adding padding to add space to make design look more uniform -->
+  <div class="padding-main"></div>
+  <div class="padding-main"></div>
+
+  <!-- This is the fifth section of content and displays an image. This is responsive. When screen
+size is reduced - the content will move up and the image move below the content -->
+  <div class="cc my-4">
+    <div class="tc tc--2-6">
+      <h1 class="text-uppercase">Transportation</h1>
+      <p class="mb-0 mlt text-wrap">
+        Let us get You anywhere you need to go on the island, whether
+        by foot, sea or air!
+      </p>
+      <a href="pages/transportation.html" class="btn btn-outline-dark"
+        >Travel more, spend Less</a
+      >
+    </div>
+    <div class="ic ic--7-13">
+      <img src="./images2/Home 6.jpg" alt="image" />
+    </div>
+  </div>
+  <div class="padding-main"></div>
+
+  <div class="padding-main"></div>
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-3 ms-auto">
+          <h6>Location</h6>
+          370 Electric Ave<br>
+          Ginger's Landing, Taniti
+        </div>
+        <div class="col-xs-6 col-md-3 ms-auto">
+          <h6>Social Media</h6>
+          <ul class="social-icons ms-auto">
+            <li>
+              <a class="facebook" href="#"
+                ><i class="fa fa-facebook"
+                  ><img
+                    src="images/facebook.png"
+                    alt="facebook social media icon" /></i
+              ></a>
+            </li>
+            <li>
+              <a class="twitter" href="#"
+                ><i class="fa fa-twitter"></i
+                ><img src="images/twitter.png" alt="twitter social media icon"
+              /></a>
+            </li>
+            <li>
+              <a class="dribbble" href="#"
+                ><i class="fa fa-dribbble"></i
+                ><img
+                  src="images/instagram.png"
+                  alt="instagram social media icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-md-3 ms-auto">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/entertainment.html">Entertainment</a></li>
+            <li><a href="pages/dining.html">Dining</a></li>
+            <li><a href="pages/lodging.html">Lodging</a></li>
+            <li><a href="pages/transportation.html">Transportation</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </footer>
+</html>
